@@ -1,0 +1,604 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:wght@300;400;600;700;900&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* background-color: #073b4c; */
+    background-color: #CC998D;
+}
+
+/* HEADER SECTION */
+
+header{
+    background-color: #0F0326;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+#pageTabs{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#pageTabs, a{
+    font-size: 20px;
+    color: #CC998D;
+    background-color:#0F0326;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#current-page{
+    color: #F7E1D9;
+    text-decoration: underline;
+}
+
+header p{
+    color: #CC998D;
+    background-color: #0F0326;
+    padding: 15px;
+}
+
+header > img{
+    margin-left: 5px;
+    height: 60px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    background-color: #0F0326;
+    color: #CC998D;
+
+    padding: 10px;
+}
+
+/* ============================================== HOME PAGE ============================================== */
+
+#title{
+    display: flex;
+}
+
+#nameBlob{
+    width: 50%;
+    margin-top: 110px;
+    border-radius: 10px;
+}
+
+#nameBlob > *{
+    margin-left: 40px;
+    margin-right: 10px;
+    color: #0F0326;
+    padding: 5px;
+}
+
+#nameBlob > h1{
+    font-size: 60px;
+    color: #922d50;
+    background-color: #CC998D;
+    border-bottom: 10px #0F0326 dotted;
+}
+
+#quote{
+    color: #0F0326;
+    background-color: #CC998D;
+    border: 3px #922d50 dotted;
+}
+
+#nameBlob > p{
+    font-size: 25px;
+}
+
+#profile-pic{
+    width: 38%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/* ============================================== RESUME =============================================== */
+#resume{
+    margin: 0px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+#resume-pic{
+    margin: 20px;
+    width: 65%;
+}
+
+#resume-link{
+    padding: 0px;
+    background-color: #CC998D;
+}
+
+#resume > h2{
+    font-size: 50px;
+    padding: 20px;
+    color: #F7E1D9;
+    background-color: #922d50;
+}
+
+/* ================================ LETTERS OF RECOMMENDATION ============================================= */
+#letters-of-rec-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    color: #F7E1D9;
+    background-color: #922d50;
+    padding-top: 80px;
+}
+
+
+#letters-of-rec{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+
+}
+
+#letters-of-rec > img, #letters-of-rec > a{
+    width: 80%;
+    margin: auto;
+}
+
+#letters-of-rec > p{
+    width: 80%;
+    margin: auto;
+    background-color: #922d50;
+    color: #0F0326;
+
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#letters-of-rec > a > img{
+    width: 100%;
+}
+
+#letters-of-rec > a{
+    background-color: #CC998D;
+}
+
+span{
+    text-decoration: underline;
+    background-color: #922d50;
+}
+
+/* ======================================== WORK SAMPLE PAGE ============================================== */
+#work-sample-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    color: #F7E1D9;
+    background-color: #922d50;
+    padding-top: 80px;
+}
+
+#work-samples{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#work-samples > img{
+    width: 100%;
+    padding: 20px;
+}
+
+#art, #skillsUSA, #music, #websites{
+    background-color: #922d50;
+    border-radius: 10px;
+}
+
+
+#work-samples > div > p, #work-samples > div > h4{
+    font-size: 20px;
+    background-color: #922d50;
+    color: #0F0326;
+}
+
+#work-samples > div > h4{
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#work-samples > div{
+    padding: 10px 20px;
+}
+
+/* ======================================= PROFILE OF A TROJAN =========================================== */
+#profile-of-a-trojan-title{
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    color: #F7E1D9;
+    background-color: #922d50;
+    padding-top: 80px;
+}
+
+#profile-of-a-trojan{
+    text-align: center;
+    margin: 20px;
+}
+
+#profile-of-a-trojan > a > img{
+    width: 80%;
+}
+
+#profile-of-a-trojan > a{
+    background-color: #CC998D;
+}
+
+
+/* ============================================= TRANSITIONS ======================================================= */
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+.reveal.active {
+    opacity: 1;
+}
+.active.fade-bottom {
+    animation: fade-bottom .5s ease-in;
+}
+.active.fade-left {
+    animation: fade-left .5s ease-in;
+}
+.active.fade-right {
+    animation: fade-right .5s ease-in;
+}
+@keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
+@keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+/*====================================== MEDIA QUERY ======================================*/
+
+/* @media ((max-width: 280px) or (max-width: 412px)){ */
+    /* #title{
+        flex-direction: column;
+    }
+    #title > *{
+        width: 100vw;
+    } */
+
+    /* ************************ Home ************************ */
+    /* #title{
+        width: 100%;
+    }
+    #nameBlob{
+        padding-top: 90px;
+        width: 80%;
+        margin: auto;
+    }
+    #nameBlob > *{
+        margin: 0px;
+        text-align: center;
+    }
+    #nameBlob > h1{
+        padding: 0px;
+        font-size: 50px;
+    }
+    #nameBlob > p{
+        font-size: 20px;
+    }
+    #profile-pic{
+        width: 75%;
+    } */
+
+    /* ************************ Resume ************************ */
+    /* #resume{
+        padding-top: 89px;
+    }
+    #resume-pic{
+        width: 80vw;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    } */
+
+    /* ************************ Letters Of Rec ************************ */
+    /* #letters-of-rec-title{
+        font-size: 30px;
+        padding-top: 100px;
+    }
+
+    #letters-of-rec{
+        grid-template-columns: 100%;
+    }
+
+    #mrs-bunnell-work-sample{
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #mrs-bunnell-work-sample-title{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #ann-work-sample{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #ann-work-sample-title{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #ruth-ann-work-sample{
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #ruth-ann-work-sample-title{
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    #letters-of-rec > p{
+        font-size: 25px;
+    } */
+
+    /* ************************ WORK SAMPLES ************************ */
+    /* #work-sample-title{
+        padding-top: 100px;
+    }
+
+    #work-samples{
+        grid-template-columns: 100%;
+    }
+    img[alt~="Adele Poster"]{
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #art{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    img[alt~="SkillsUSA"]{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #skillsUSA{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    img[alt~="Church Worship Music"]{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #church{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    img[alt~="Quiz Bowl Website"]{
+        grid-row-start: 10;
+        grid-row-end: 11;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #websites{
+        grid-row-start: 8;
+        grid-row-end: 9;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    } */
+    /* ************************ Profile of a Trojan ************************ */
+    /* #profile-of-a-trojan-title{
+        font-size: 35px;
+        padding-top: 100px;
+    }     */
+/* }; */
+
+@media (max-width: 414px){
+    /* ************************ Home ************************ */
+    #title{
+        width: 100%;
+        flex-direction: column;
+    }
+    #nameBlob{
+        padding-top: 90px;
+        width: 80%;
+        margin: auto;
+    }
+    #nameBlob > *{
+        margin: 0px;
+        text-align: center;
+    }
+    #nameBlob > h1{
+        padding: 0px;
+        font-size: 50px;
+    }
+    #nameBlob > p{
+        font-size: 20px;
+    }
+    #profile-pic{
+        width: 75%;
+    }
+
+    /* ************************ Resume ************************ */
+    #resume{
+        padding-top: 89px;
+    }
+    #resume-pic{
+        width: 80vw;
+    }
+
+    /* ************************ Letters Of Rec ************************ */
+    #letters-of-rec-title{
+        font-size: 30px;
+        padding-top: 100px;
+    }
+
+    #letters-of-rec{
+        grid-template-columns: 100%;
+    }
+
+    #mrs-bunnell-work-sample{
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #mrs-bunnell-work-sample-title{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #ann-work-sample{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #ann-work-sample-title{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #ruth-ann-work-sample{
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #ruth-ann-work-sample-title{
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    #letters-of-rec > p{
+        font-size: 25px;
+    }
+
+    /* ************************ WORK SAMPLES ************************ */
+    #work-sample-title{
+        padding-top: 100px;
+    }
+
+    #work-samples{
+        grid-template-columns: 100%;
+    }
+    img[alt~="Adele Poster"]{
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #art{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    img[alt~="SkillsUSA"]{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #skillsUSA{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    img[alt~="Church Worship Music"]{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #church{
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    img[alt~="Quiz Bowl Website"]{
+        grid-row-start: 10;
+        grid-row-end: 11;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #websites{
+        grid-row-start: 8;
+        grid-row-end: 9;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    /* ************************ Profile of a Trojan ************************ */
+    #profile-of-a-trojan-title{
+        padding-top: 100px;
+    }    
+};
+
+/* @media (max-width: 1024px){
+    header{
+        font-size: 10px;
+    }
+}; */
